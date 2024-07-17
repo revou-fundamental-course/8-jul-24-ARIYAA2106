@@ -1,1 +1,132 @@
-/* this style css */
+/* ini css */
+
+.main-title{
+    text-align: center;
+    padding: ;
+
+}
+
+main {
+display: flex;
+justify-content: space-around;
+
+}
+
+.main-content{
+    padding: 8%;
+    background-color: white;
+    flex: 1
+}
+.input-title{
+font-size: 14px;
+font-weight: bold;
+
+}
+form{
+    background-color: azure;
+    border: 1px solid;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+
+.button{
+
+    border-radius: 6px;
+}
+    
+   
+
+.submit{
+    
+    background-color: aqua;
+    border: 1px solid lightblue;
+
+
+}
+
+.reset{
+
+    background-color: white;
+    border: 1px solid lightblue;
+
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type=number]:focus {
+    border: 3px solid #0f21e3;
+  }
+ .result-section {
+
+    background-color: azure;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid;
+    padding: 12px 5px;
+}
+.input-konsul {
+    background-color: rgb(33, 211, 54);
+    font-family: Times New Roman;
+    border: 1px solid;
+    padding: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.input-konsul:hover {
+    background-color: rgb(134, 230, 148);
+    box-shadow: 0 2px 4px rgb(19, 220, 35);
+    transform: translateY(-2px)
+}
+.input-proses {
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    padding: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input-proses:hover {
+    background-color: rgb(71, 71, 198);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+.image {
+    border: 2px solid;
+    width: 90px;
+    height: 90px;
+    border-radius: 7px;
+}
+
+.image:hover {
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(4, 4, 4);
+    transform: translateY(-2px)
+}
+
+
+
+ /* Responsive Website On Mobile */
+ @media only screen and (max-width: 425px){
+    main{
+        flex-direction: column;
+    }
+
+    .result-content{
+    display: block !important;
+
+    }
+ }
