@@ -12,8 +12,7 @@ function updateResult() {
         document.getElementById("bmiForm").reset();
         document.getElementById("bmi-result").innerText = "";
         document.getElementById("bmi-category").innerText = "";
-    
-
+    }
 
     // Mengonversi tinggi badan dari cm ke meter
     let tinggiBadanM = tinggiBadan / 100;
@@ -36,5 +35,5 @@ function updateResult() {
     // Menampilkan hasil
     document.getElementById("bmi-result").innerText = BMI.toFixed(2);
     document.getElementById("bmi-category").innerText = "Anda " + kategoriBeratBadan;
-}
+
 
