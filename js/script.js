@@ -5,14 +5,6 @@ function updateResult() {
     let beratBadan = parseFloat(document.getElementById("input-berat-badan").value);
     let usia = parseInt(document.getElementById("input-usia").value);
     let tinggiBadan = parseFloat(document.getElementById("input-tinggi-badan").value);
-}
-
-    function resetForm() {
-        // Mengatur ulang nilai form dan hasil
-        document.getElementById("bmiForm").reset();
-        document.getElementById("bmi-result").innerText = "";
-        document.getElementById("bmi-category").innerText = "";
-    }
 
     // Mengonversi tinggi badan dari cm ke meter
     let tinggiBadanM = tinggiBadan / 100;
@@ -35,5 +27,11 @@ function updateResult() {
     // Menampilkan hasil
     document.getElementById("bmi-result").innerText = BMI.toFixed(2);
     document.getElementById("bmi-category").innerText = "Anda " + kategoriBeratBadan;
+}
 
-
+function resetForm() {
+    // Mengatur ulang nilai form dan hasil
+    document.getElementById("bmiForm").reset();
+    document.getElementById("bmi-result").innerText = "";
+    document.getElementById("bmi-category").innerText = "";
+}
